@@ -1,0 +1,65 @@
+[
+  {
+    "id": "DVC-00001",
+    "name": "Device 1",
+    "type": "mobile",
+    "temperature": 10,
+    "status": "available"
+  },
+  {
+    "id": "DVC-00002",
+    "name": "Device 2",
+    "type": "tablet",
+    "temperature": 15,
+    "status": "offline"
+  },
+  {
+    "id": "DVC-00003",
+    "name": "Device 3",
+    "type": "desktop",
+    "temperature": 13,
+    "status": "available"
+  },
+  {
+    "id": "DVC-00004",
+    "name": "Device 4",
+    "type": "laptop",
+    "temperature": 12,
+    "status": "available"
+  },
+  {
+    "id": "DVC-00005",
+    "name": "Device 5",
+    "type": "tv",
+    "temperature": 9,
+    "status": "available"
+  },
+  {
+    "id": "DVC-00006",
+    "name": "Device 6",
+    "type": "mobile",
+    "temperature": 16,
+    "status": "offline"
+  },
+  {
+    "id": "DVC-00007",
+    "name": "Device 7",
+    "type": "mobile",
+    "temperature": 14,
+    "status": "offline"
+  },
+  {
+    "id": "DVC-00008",
+    "name": "Device 8",
+    "type": "tv",
+    "temperature": 22,
+    "status": "offline"
+  },
+  {
+    "id": "DVC-00009",
+    "name": "Device 9",
+    "type": "tablet",
+    "temperature": 23,
+    "status": "offline"
+  }
+]

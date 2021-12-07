@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <div class="icon"><img [src]='getIcon()'></div>
+  <div class="main">
+    <div class="name">{{ device.name }}</div>
+    <div class="status">{{ 'Status: ' }}<span [ngClass]="{ available: device.status === 'available' }">{{  getStatus() }}</span></div>
+  </div>
+<div class="info"><img src="assets/icons/info.svg"></div>
+</div>

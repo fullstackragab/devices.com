@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+
+  .related-devices {
+    app-device-list-item {
+      margin: 10px auto;
+      display: block;
+      cursor: pointer;
+    }
+  }
+}
