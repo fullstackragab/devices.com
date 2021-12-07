@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Device } from '../models/device';
 import { DeviceService } from '../services/device.service';
+import { SearchService } from '../services/search.service';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +10,14 @@ import { DeviceService } from '../services/device.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  devices: Device[] = []
-  constructor(private deviceSerice: DeviceService) { }
+  constructor(private searchService: SearchService, private router: Router) { }
 
   ngOnInit(): void {
-    this.deviceSerice.getDeviceList().subscribe(devices => this.devices = devices)
+
   }
 
+  onSearch(value: string) {
+    if(this.router.url === '/devices')
+      this.searchService.search(value)
+  }
 }

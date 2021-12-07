@@ -9,6 +9,7 @@ import { Resources } from '../Resources';
 })
 export class DeviceListItemComponent implements OnInit {
   @Input() device!: Device;
+  @Input() showInfo: boolean = true
   constructor() { }
 
   ngOnInit(): void {

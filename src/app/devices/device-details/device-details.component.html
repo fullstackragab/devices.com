@@ -1,14 +1,20 @@
-<div class="wrapper">
+<div class="wrapper" *ngIf="device">
   <div class="related-devices">
-    <app-device-list-item [routerLink]="['/devices', device.id]" *ngFor="let device of related_devices" [device]='device'>
-    </app-device-list-item>
+    <div class="title">Related Devices</div>
+    <div class="devices">
+      <app-device-list-item [showInfo]="false" [routerLink]="['/devices', device.id]" *ngFor="let device of related_devices" [device]='device'>
+      </app-device-list-item>
+    </div>
   </div>
   <div class="device-details">
     <div class="title">{{ 'Details: ' + device.name }}</div>
     <div class="content">
       <div class="status">{{ 'Status: ' + device.status }}</div>
       <div class="temperature">{{ 'Temperature: ' + device.temperature }}</div>
-      <div class="usage"><img src="assets/images/barchart.svg"></div>
+      <div class="usage">
+        <div class="usage-title">Usage:</div>
+        <img src="assets/images/barchart.svg">
+      </div>
     </div>
   </div>
 </div>

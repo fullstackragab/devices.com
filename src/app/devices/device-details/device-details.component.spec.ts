@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterModule } from '@angular/router';
 
 import { DeviceDetailsComponent } from './device-details.component';
 
@@ -8,7 +9,8 @@ describe('DeviceDetailsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DeviceDetailsComponent ]
+      declarations: [ DeviceDetailsComponent ],
+      imports: [ RouterModule.forRoot([])]
     })
     .compileComponents();
   });

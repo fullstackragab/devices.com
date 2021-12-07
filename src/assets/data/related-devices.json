@@ -1,19 +1,39 @@
 [
   {
     "device_id": "DVC-00001",
-    "related_devices": ["DVC-00002", "DVC-00003", "DVC-00004"]
+    "related_devices": ["DVC-00002", "DVC-00003", "DVC-00008"]
   },
 
   {
     "device_id": "DVC-00002",
-    "related_devices": ["DVC-00005", "DVC-00008", "DVC-00009"]
+    "related_devices": ["DVC-00005", "DVC-00006", "DVC-00008", "DVC-00009"]
+  },
+  {
+    "device_id": "DVC-00003",
+    "related_devices": ["DVC-00004", "DVC-00008", "DVC-00009"]
+  },
+  {
+    "device_id": "DVC-00004",
+    "related_devices": ["DVC-00001", "DVC-00007", "DVC-00008", "DVC-00009"]
   },
   {
     "device_id": "DVC-00005",
-    "related_devices": ["DVC-00001", "DVC-00004", "DVC-00009"]
+    "related_devices": ["DVC-00001", "DVC-00004", "DVC-00006", "DVC-00008"]
   },
   {
     "device_id": "DVC-00006",
-    "related_devices": ["DVC-00002", "DVC-00008", "DVC-00008"]
+    "related_devices": ["DVC-00002", "DVC-00006", "DVC-00008", "DVC-00009"]
+  },
+  {
+    "device_id": "DVC-00007",
+    "related_devices": ["DVC-00005", "DVC-00008", "DVC-00009"]
+  },
+  {
+    "device_id": "DVC-00008",
+    "related_devices": ["DVC-00005", "DVC-00006", "DVC-00008", "DVC-00009"]
+  },
+  {
+    "device_id": "DVC-00009",
+    "related_devices": ["DVC-00002", "DVC-00003", "DVC-00005", "DVC-00006", "DVC-00007"]
   }
 ]

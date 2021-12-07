@@ -1,12 +1,62 @@
 .wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 
   .related-devices {
-    app-device-list-item {
-      margin: 10px auto;
-      display: block;
-      cursor: pointer;
+    // padding: 10px;
+    // padding-left: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    .title {
+      background-color: #d1d1d1;
+      padding: 10px;
+      box-sizing: border-box;
+      font-weight: bold;
+      color: #202020;
+      border-radius: 4px;
+    }
+    .devices {
+      app-device-list-item {
+        margin: 10px auto;
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .device-details {
+    box-sizing: border-box;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    // margin: 10px;
+    // margin-right: 0px;
+    width: 100%;
+    .title {
+      background-color: #d1d1d1;
+      padding: 10px;
+      box-sizing: border-box;
+      font-weight: bold;
+      color: #202020;
+    }
+    .content {
+      padding: 20px;
+
+      .usage {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        img {
+          width: 100%;
+          max-width: 400px;
+        }
+      }
     }
   }
 }
